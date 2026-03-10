@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Katalog Mitra Flora</title>
+<style>
+
+.produk img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+.produk-item {
+    display: none; 
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<img src="logo mitra flora.webp" alt="Logo Mitra Flora" width="80">
+<h1 align="center">Sistem Informasi Penjualan Tanaman Hias Mitra Flora</h1>
+</header>
+
+<hr>
+
+<!-- MENU -->
+<nav align="right"> 
+<a href="index.html">Beranda</a> 
+<a href="produk.html">Produk Kami</a> 
+<a href="blog.html">Blog</a> 
+<a href="kontak.html">Kontak</a>
+</nav>
+
+<hr>
+
+<table width="100%">
+<tr>
+
+<!-- SIDEBAR -->
+<td width="15%" valign="top">
+<h3>Cari Produk</h3>
+<input type="text" placeholder="Cari produk">
+
+<h3>Kategori</h3>
+<ul>
+<li><a href="#" onclick="tampilkan('indoor')">Tanaman Indoor</a> </li>
+<li><a href="#" onclick="tampilkan('outdoor')">Tanaman Outdoor</a> </li>
+</ul>
+</td>
+
+<!-- ISI KATALOG -->
+<td width="75%" valign="top">
+<h2>Katalog Produk</h2>
+
+<div class="produk">
+
+<!-- Tanaman Indoor -->
+<div class="produk-item indoor">
+    <img src="anggrek bulan.jpg" alt="Anggrek Bulan">
+    <p>Anggrek Bulan</p>
+</div>
+<div class="produk-item indoor">
+    <img src="kaktus.jpg" alt="Kaktus">
+    <p>Kaktus</p>
+</div>
+<div class="produk-item indoor">
+    <img src="lidah mertua.jpg" alt="Lidah Mertua">
+    <p>Lidah Mertua</p>
+</div>
+<div class="produk-item indoor">
+    <img src="aglonema.jpg" alt="Aglonema">
+    <p>Aglonema</p>
+</div>
+
+<!-- Tanaman Outdoor -->
+<div class="produk-item outdoor">
+    <img src="marigold.jpg" alt="Bunga Marigold">
+    <p>Bunga Marigold</p>
+</div>
+<div class="produk-item outdoor">
+    <img src="bromelia.jpg" alt="Bromelia">
+    <p>Bromelia</p>
+</div>
+<div class="produk-item outdoor">
+    <img src="tillandsia.jpg" alt="Tillandsia">
+    <p>Tillandsia</p>
+</div>
+
+</div>
+</td>
+</tr>
+</table>
+
+<script>
+// Fungsi untuk menampilkan produk sesuai kategori
+function tampilkan(kategori){
+    // sembunyikan semua
+    let semua = document.getElementsByClassName('produk-item');
+    for(let i=0; i<semua.length; i++){
+        semua[i].style.display = 'none';
+    }
+
+    // tampilkan yang sesuai kategori
+    let items = document.getElementsByClassName(kategori);
+    for(let i=0; i<items.length; i++){
+        items[i].style.display = 'inline-block';
+    }
+}
+
+window.onload = function() {
+    const hash = window.location.hash.replace('#', '');
+    if(hash === 'indoor' || hash === 'outdoor'){
+        tampilkan(hash);
+    }
+}
+</script>
+
+</body>
+</html>
