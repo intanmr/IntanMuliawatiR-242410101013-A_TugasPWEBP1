@@ -2,105 +2,229 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Katalog Mitra Flora</title>
-
-<style>
-.produk img{
-    width:200px;
-    height:200px;
-    object-fit:cover;
-    margin:10px;
-}
-
-.produk-item{
-    display:none;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <img src="logo mitra flora.webp" alt="Logo Mitra Flora" width="80">
-        <h1 align="center">Sistem Informasi Penjualan Tanaman Hias Mitra Flora</h1>
-    </header>
-    <hr>
-    <nav align="right">
+
+<header>
+    <img src="logo mitra flora.webp" alt="Logo Mitra Flora">
+    <h1>Mitra Flora</h1>
+
+    <nav>
         <a href="index.html">Beranda</a> 
         <a href="produk.html">Produk Kami</a> 
-        <a href="blog.html">Blog</a> 
-        <a href="kontak.html">Kontak</a>
+        <a href="riwayat.html">Riwayat Pemesanan</a> 
+        <a href="akun.html">Akun</a>
     </nav>
-    <hr>
+</header>
+
 <main>
-    <div>
-        <aside>
+
+<section class="hero">
+    <h2>Katalog Produk</h2>
+    <p>
+        Temukan berbagai pilihan tanaman hias berkualitas yang siap mempercantik rumah, kantor, maupun taman Anda. 
+        Setiap produk dilengkapi informasi lengkap untuk membantu Anda memilih tanaman yang sesuai dengan kebutuhan.
+    </p>
+</section>
+
+<section>
+    <aside class="sidebar">
+        <form>
             <h3>Cari Produk</h3>
-            <input type="text" placeholder="Cari produk">
+
+            <input type="text" placeholder="Cari produk...">
+            <button type="submit">Cari</button>
+
             <h3>Kategori</h3>
-            <ul>
-                <li><a href="#" onclick="tampilkan('indoor')">Tanaman Indoor</a></li>
-                <li><a href="#" onclick="tampilkan('outdoor')">Tanaman Outdoor</a></li>
-            </ul>
-        </aside>
-        <br>
-        <section>
-            <h2>Katalog Produk</h2>
-            <div class="produk">
-                <div class="produk-item indoor">
-                    <img src="anggrek bulan.jpg" alt="Anggrek Bulan">
-                    <p>Anggrek Bulan</p>
-                </div>
-                <div class="produk-item indoor">
-                    <img src="kaktus.jpg" alt="Kaktus">
-                    <p>Kaktus</p>
-                </div>
-                <div class="produk-item indoor">
-                    <img src="lidah mertua.jpg" alt="Lidah Mertua">
-                    <p>Lidah Mertua</p>
-                </div>
-                <div class="produk-item indoor">
-                    <img src="aglonema.jpg" alt="Aglonema">
-                    <p>Aglonema</p>
-                </div>
-                <div class="produk-item outdoor">
-                    <img src="marigold.jpg" alt="Bunga Marigold">
-                    <p>Bunga Marigold</p>
-                </div>
-                <div class="produk-item outdoor">
-                    <img src="bromelia.jpg" alt="Bromelia">
-                    <p>Bromelia</p>
-                </div>
-                <div class="produk-item outdoor">
-                    <img src="tillandsia.jpg" alt="Tillandsia">
-                    <p>Tillandsia</p>
-                </div>
-            </div>
-        </section>
-    </div>
+            <label><input type="checkbox"> Indoor</label>
+            <label><input type="checkbox"> Outdoor</label>
+        </form>
+    </aside>
+</section>
+    <section>
+        <h2>Katalog Produk</h2>
+
+        <div class="produk">
+            <article class="produk-item">
+                <img src="anggrek bulan.jpg" alt="Anggrek Bulan">
+                <h3>Anggrek Bulan</h3>
+                <p class="deskripsi">Anggrek bulan adalah bunga eksotis 
+                    dengan kelopak putih elegan dan bunga yang tahan lama, 
+                    cocok sebagai hiasan meja atau gantung. Tanaman ini 
+                    membutuhkan cahaya tidak langsung dan kelembapan sedang 
+                    agar tetap mekar indah.</p>
+                <p class="harga">Rp 50.000</p>
+                <a href="transaksi.html">
+                    <button class="btn-beli">Beli</button>
+                </a>
+            </article>
+            <article class="produk-item">
+                <img src="kaktus.jpg" alt="Kaktus">
+                <h3>Kaktus</h3>
+                <p class="deskripsi">Kaktus adalah tanaman tahan kering 
+                    yang mudah dirawat dan tahan terhadap kondisi yang kurang air.</p>
+                <p class="harga">Rp 30.000</p>
+                <a href="transaksi.html">
+                    <button class="btn-beli">Beli</button>
+                </a>
+            </article>
+
+            <article class="produk-item">
+                <img src="lidah mertua.jpg" alt="Lidah Mertua">
+                <h3>Lidah Mertua</h3>
+                <p class="deskripsi">Lidah mertua adalah tanaman hias yang kuat dan tahan lama, 
+                    dikenal dengan daun tegak bertekstur keras. Tanaman ini sangat cocok untuk 
+                    pemula karena sedikit perawatan dan mampu membersihkan udara di dalam ruangan.</p>
+                <p class="harga">Rp 45.000</p>
+                <a href="transaksi.html">
+                    <button class="btn-beli">Beli</button>
+                </a>
+            </article>
+
+            <article class="produk-item">
+                <img src="aglonema.jpg" alt="Aglonema">
+                <h3>Aglonema</h3>
+                <p class="deskripsi">Aglonema adalah tanaman hias 
+                    daun yang elegan dengan corak hijau dan perak, 
+                    cocok untuk dekorasi interior. Tanaman ini tahan 
+                    di kondisi cahaya rendah dan perawatannya sangat mudah, 
+                    hanya memerlukan penyiraman yang cukup.</p>
+                <p class="harga">Rp 55.000</p>
+                <a href="transaksi.html">
+                    <button class="btn-beli">Beli</button>
+                </a>
+            </article>
+
+            <article class="produk-item">
+                <img src="marigold.jpg" alt="Bunga Marigold">
+                <h3>Bunga Marigold</h3>
+                <p class="deskripsi">Marigold adalah bunga cerah 
+                    yang mudah tumbuh dengan warna oranye dan kuning 
+                    yang menawan, ideal untuk mempercantik taman atau 
+                    pot di rumah. Tanaman ini tahan hama dan membutuhkan 
+                    sinar matahari penuh agar mekar maksimal</p>
+                <p class="harga">Rp 25.000</p>
+                <a href="transaksi.html">
+                    <button class="btn-beli">Beli</button>
+                </a>
+            </article>
+
+            <article class="produk-item">
+                <img src="bromelia.jpg" alt="Bromelia">
+                <h3>Bromelia</h3>
+                <p class="deskripsi">Bromelia merupakan tanaman hias 
+                    tropis yang memikat, memiliki daun berwarna 
+                    mencolok dengan susunan roset khas, ideal untuk 
+                    memperindah interior rumah atau taman. Perawatannya 
+                    sederhana, hanya membutuhkan cahaya tidak langsung 
+                    dan penyiraman teratur agar daunnya tetap menarik.</p>
+                <p class="harga">Rp 60.000</p>
+                <a href="transaksi.html">
+                    <button class="btn-beli">Beli</button>
+                </a>
+            </article>
+
+            <article class="produk-item">
+                <img src="tillandsia.jpg" alt="Tillandsia">
+                <h3>Tillandsia</h3>
+                <p class="deskripsi">Tillandsia adalah tanaman hias 
+                    istimewa yang hidup sebagai epifit, sehingga tidak 
+                    memerlukan tanah dan bisa menempel pada kayu, batu, 
+                    atau media lain. Cukup disemprot air secara teratur, 
+                    tanaman ini menambahkan sentuhan hijau yang cantik dan 
+                    modern pada dekorasi rumah atau kantor</p>
+                <p class="harga">Rp 40.000</p>
+                <a href="transaksi.html">
+                    <button class="btn-beli">Beli</button>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2>Daftar Produk</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Produk</th>
+                    <th>Kategori</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anggrek Bulan</td>
+                    <td>Indoor</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Kaktus</td>
+                    <td>Indoor</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Lidah Mertua</td>
+                    <td>Indoor</td>
+                    <td>Hampir Habis</td>
+                </tr>
+                <tr>
+                    <td>Aglonema</td>
+                    <td>Indoor</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Tillandsia</td>
+                    <td>Indoor</td>
+                    <td>Hampir Habis</td>
+                </tr>
+                <tr>
+                    <td>Marigold</td>
+                    <td>Outdoor</td>
+                    <td>Habis</td>
+                </tr>
+                <tr>
+                    <td>Bromelia</td>
+                    <td>Outdoor</td>
+                    <td>Tersedia</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
 </main>
 
-<hr>
 <footer>
-    <p align="center">© 2026 Mitra Flora</p>
-    <p align="center">Alamat: Jl. Kalimantan 10, Jember, Indonesia</p>
-    <p align="center">Email: mitraflora@email.com</p>
-    <p align="center">Telepon: 08123456789</p>
+    <div class="footer-konten">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="logo mitra flora.webp" alt="Mitra Flora Logo">
+        </div>
+
+        <div class="footer-info">
+            <div class="footer-item">
+                <h3>Mitra Flora</h3>
+                <p>Menyediakan berbagai kebutuhan tanaman hias berkualitas untuk rumah, kantor, dan taman.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Lokasi</h3>
+                <p>Jl. Kalimantan 10, Jember, Indonesia</p>
+            </div>
+            <div class="footer-item">
+                <h3>Kontak</h3>
+                <p>Email: mitraflora@email.com</p>
+                <p>WA: 08123456789</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Mitra Flora. Hak cipta dilindungi.
+    </div>
 </footer>
-<script>
-function tampilkan(kategori){
-let semua = document.getElementsByClassName('produk-item');
-for(let i=0;i<semua.length;i++){
-semua[i].style.display='none';}
-let items=document.getElementsByClassName(kategori);
-for(let i=0;i<items.length;i++){
-items[i].style.display='inline-block';}
-}
-window.onload=function(){
-const hash=window.location.hash.replace('#','');
-if(hash==='indoor'||hash==='outdoor'){
-tampilkan(hash);}
-}
-</script>
+
 </body>
 </html>

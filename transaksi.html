@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pembelian Mitra Flora</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #2e7d32;
+    padding:20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    position: relative;
+    background:white;
+    padding:30px 20px 20px 20px;
+    border-radius:10px;
+    max-width:450px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+label {
+    font-weight:bold;
+}
+input, select, button, textarea {
+    padding:8px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+textarea {
+    resize: vertical;
+}
+button {
+    background:#2e7d32;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+button:hover {
+    background:#1b5e20;
+}
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background:#e53935;
+    color:white;
+    border:none;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:50%;
+    width:28px;
+    height:28px;
+    cursor:pointer;
+}
+.close-btn:hover {
+    background:#b71c1c;
+}
+</style>
+</head>
+
+<body>
+
+<main>
+    <section>
+        <h2>Form Pembelian Tanaman Hias</h2>
+
+        <form>
+            <button type="button" class="close-btn" onclick="window.location.href='katalog.html'">&times;</button>
+
+            <label for="produk">Produk (stok tersedia):</label>
+            <select id="produk" required>
+                <option value="">-- Pilih Produk --</option>
+                <option value="anggrek">Anggrek Bulan (Stok: 10) - Rp 50.000</option>
+                <option value="kaktus">Kaktus (Stok: 5) - Rp 30.000</option>
+                <option value="lidah">Lidah Mertua (Stok: 8) - Rp 45.000</option>
+                <option value="aglonema">Aglonema (Stok: 4) - Rp 55.000</option>
+                <option value="marigold">Bunga Marigold (Stok: 0) - Rp 25.000</option>
+                <option value="bromelia">Bromelia (Stok: 3) - Rp 60.000</option>
+                <option value="tillandsia">Tillandsia (Stok: 6) - Rp 40.000</option>
+            </select>
+
+            <label for="harga">Harga:</label>
+            <input type="text" id="harga" readonly value="Pilih produk untuk melihat harga">
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" min="1" value="1" required>
+
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" rows="3" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="metode">Metode Pembayaran:</label>
+            <select id="metode" required>
+                <option value="">-- Pilih Metode --</option>
+                <option value="transfer">Transfer Bank - (BCA : 78806350373)</option>
+                <option value="cod">COD</option>
+            </select>
+            <label for="bukti">Upload Bukti Pembayaran:</label>
+            <input type="file" id="bukti" required>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>

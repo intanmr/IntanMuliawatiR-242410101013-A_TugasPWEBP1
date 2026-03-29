@@ -2,29 +2,27 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mitra Flora</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
     <img src="logo mitra flora.webp" alt="Logo Mitra Flora" width="80">
-    <h1 align="center">Sistem Informasi Penjualan Tanaman Hias Mitra Flora</h1>
+    <h1>Mitra Flora</h1>
+
+    <nav>
+        <a href="index.html">Beranda</a> 
+        <a href="produk.html">Produk Kami</a> 
+        <a href="riwayat.html">Riwayat Pemesanan</a> 
+        <a href="akun.html">Akun</a>
+    </nav>
 </header>
 
-<hr>
-
-<nav align="right">
-    <a href="index.html">Beranda</a> 
-    <a href="produk.html">Produk Kami</a> 
-    <a href="blog.html">Blog</a> 
-    <a href="kontak.html">Kontak</a>
-</nav>
-
-<hr>
-
 <main>
-    <section>
+
+    <section class="hero">
         <h2>Selamat Datang di Mitra Flora</h2>
         <p>
             Mitra Flora menyediakan berbagai tanaman hias indah dan berkualitas.
@@ -35,68 +33,94 @@
             <button>Lihat Produk</button>
         </a>
     </section>
-    <hr>
 
-   <section>
-<h1 align="center">Produk Kami</h1>
-<p>Temukan berbagai pilihan tanaman hias yang cantik dan mudah dirawat.</p>
+    <section>
+        <h2>Produk Kami</h2>
+        <p>Temukan berbagai pilihan tanaman hias yang cantik dan mudah dirawat.</p>
 
-<div>
-    <div align="center">
-        <img src="Tanaman Indoor.jpg" width="300" height="150"><br>
-        <h3>Tanaman Indoor</h3>
-        <a href="produk.html">Jelajahi produk kami</a>
-    </div>
+        <div>
+            <article>
+                <img src="Tanaman Indoor.jpg" alt="Tanaman Indoor" width="300">
+                <h3>Tanaman Indoor</h3>
+                <a href="produk.html">Jelajahi produk kami</a>
+            </article>
 
-    <br>
-
-    <div align="center">
-        <img src="Tanaman Outdoor.jpg" width="300" height="150"><br>
-        <h3>Tanaman Outdoor</h3>
-        <a href="produk.html">Jelajahi produk kami</a>
-    </div>
-</div>
-</section>
-<hr>
-<aside>
-    <h3>Statistik Produk Terlaris</h3>
-    <p>Monstera (120 terjual)</p>
-    <progress value="120" max="150"></progress>
-    <p>Anggrek Bulan (95 terjual)</p>
-    <progress value="95" max="150"></progress>
-    <p>Philodendron (80 terjual)</p>
-    <progress value="80" max="150"></progress>
-    <p>Calathea (60 terjual)</p>
-    <progress value="60" max="150"></progress>
-</aside>
-
-<hr>
-<section>
-    <h1 align="center">Kami menghadirkan tanaman untuk berbagai jenis ruangan</h1>
-    <div>
-        <div align="center">
-            <img src="gedung.jpg" width="300" height="150"><br>
-            <h3>Gedung</h3>
+            <article>
+                <img src="Tanaman Outdoor.jpg" alt="Tanaman Outdoor" width="300">
+                <h3>Tanaman Outdoor</h3>
+                <a href="produk.html">Jelajahi produk kami</a>
+            </article>
         </div>
-        <br>
-        <div align="center">
-            <img src="kantor.jpg" width="300" height="150"><br>
-            <h3>Kantor</h3>
+    </section>
+
+    <aside>
+        <h3>Statistik Produk Terlaris</h3>
+
+        <p>Monstera (120 terjual)</p>
+        <progress value="120" max="150"></progress>
+
+        <p>Anggrek Bulan (95 terjual)</p>
+        <progress value="95" max="150"></progress>
+
+        <p>Philodendron (80 terjual)</p>
+        <progress value="80" max="150"></progress>
+
+        <p>Calathea (60 terjual)</p>
+        <progress value="60" max="150"></progress>
+    </aside>
+
+    <section>
+        <h2>Kami menghadirkan tanaman untuk berbagai jenis ruangan</h2>
+
+        <div>
+            <article>
+                <img src="gedung.jpg" alt="Gedung" width="300">
+                <h3>Gedung</h3>
+            </article>
+
+            <article>
+                <img src="kantor.jpg" alt="Kantor" width="300">
+                <h3>Kantor</h3>
+            </article>
+
+            <article>
+                <img src="sekolah.jpg" alt="Sekolah" width="300">
+                <h3>Sekolah</h3>
+            </article>
         </div>
-        <br>
-        <div align="center">
-            <img src="sekolah.jpg" width="300" height="150"><br>
-            <h3>Sekolah</h3>
-        </div>
-    </div>
-</section>
+    </section>
+
 </main>
-<hr>
+
 <footer>
-    <p align="center">© 2026 Mitra Flora</p>
-    <p align="center">Alamat: Jl. Kalimantan 10, Jember, Indonesia</p>
-    <p align="center">Email: mitraflora@email.com</p>
-    <p align="center">Telepon: 08123456789</p>
+    <div class="footer-konten">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="logo mitra flora.webp" alt="Mitra Flora Logo">
+        </div>
+
+        <!-- Info 3 kolom -->
+        <div class="footer-info">
+            <div class="footer-item">
+                <h3>Mitra Flora</h3>
+                <p>Menyediakan berbagai kebutuhan tanaman hias berkualitas untuk rumah, kantor, dan taman.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Lokasi</h3>
+                <p>Jl. Kalimantan 10, Jember, Indonesia</p>
+            </div>
+            <div class="footer-item">
+                <h3>Kontak</h3>
+                <p>Email: mitraflora@email.com</p>
+                <p>WA: 08123456789</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Mitra Flora. Hak cipta dilindungi.
+    </div>
 </footer>
+
 </body>
 </html>

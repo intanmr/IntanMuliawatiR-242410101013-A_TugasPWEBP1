@@ -4,26 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Produk Kami - Mitra Flora</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <img src="logo mitra flora.webp" alt="Logo Mitra Flora" width="80">
-    <h1 align="center">Sistem Informasi Penjualan Tanaman Hias Mitra Flora</h1>
+    <h1>Mitra Flora</h1>
+
+    <nav>
+        <a href="index.html">Beranda</a> 
+        <a href="produk.html">Produk Kami</a> 
+        <a href="riwayat.html">Riwayat Pemesanan</a> 
+        <a href="akun.html">Akun</a>
+    </nav>
 </header>
 
-<hr>
-<nav align="right"> 
-    <a href="index.html">Beranda</a> 
-    <a href="produk.html">Produk Kami</a> 
-    <a href="blog.html">Blog</a> 
-    <a href="kontak.html">Kontak</a>
-</nav>
+<main class="layout">
 
-<hr>
-
-<main>
-    <section>
+    <section class="hero">
         <h2>Solusi Tanaman Hias Indoor dan Outdoor untuk Rumah, Gedung, maupun Kampus</h2>
         <p>
             Ciptakan suasana hijau yang segar dan menyenangkan dengan koleksi tanaman hias pilihan 
@@ -34,45 +33,46 @@
             <button>Lihat Semua Produk</button>
         </a>
     </section>
-    <hr>
 
     <section>
         <h2 id="tanaman-indoor">Tanaman Indoor</h2>
-        <a href="detailindoor.html">
-            <img src="Tanaman Indoor.jpg" width="200" height="150" align="right">
-        </a>
-        <p>
-            Tanaman indoor tidak hanya mempercantik ruangan, tetapi juga menciptakan suasana yang 
-            lebih segar dan menenangkan, menghadirkan keindahan alami di ruang tamu, kamar, atau 
-            ruang kerja.
-        </p>
-        <p>Anda dapat melihat berbagai pilihan tanaman indoor yang kami sediakan</p>
-        <a href="katalog.html#indoor">
-            <button>Lihat Katalog</button>
-        </a>
+
+        <article>
+            <a href="detailindoor.html">
+                <img src="Tanaman Indoor.jpg" alt="Tanaman Indoor" width="200">
+            </a>
+            <p>
+                Tanaman indoor tidak hanya mempercantik ruangan, tetapi juga menciptakan suasana yang 
+                lebih segar dan menenangkan, menghadirkan keindahan alami di ruang tamu, kamar, atau 
+                ruang kerja.
+            </p>
+            <p>Anda dapat melihat berbagai pilihan tanaman indoor yang kami sediakan</p>
+            <a href="katalog.html#indoor">
+                <button>Lihat Katalog</button>
+            </a>
+        </article>
     </section>
-    <hr>
-    
+
     <section>
         <h2 id="tanaman-outdoor">Tanaman Outdoor</h2>
-        <a href="detailoutdoor.html">
-            <img src="Tanaman Outdoor.jpg" width="200" height="150" align="right">
-        </a>
-        <p>
-            Tanaman outdoor tidak hanya menambah keindahan, tetapi juga memberikan suasana 
-            alami yang menyegarkan, membuat setiap ruang terbuka menjadi lebih hidup dan nyaman.
-        </p>
-        <p>Anda dapat melihat berbagai pilihan tanaman outdoor yang kami sediakan</p>
-        <a href="katalog.html#outdoor">
-            <button>Lihat Katalog</button>
-        </a>
+
+        <article>
+            <a href="detailoutdoor.html">
+                <img src="Tanaman Outdoor.jpg" alt="Tanaman Outdoor" width="200">
+            </a>
+            <p>
+                Tanaman outdoor tidak hanya menambah keindahan, tetapi juga memberikan suasana 
+                alami yang menyegarkan, membuat setiap ruang terbuka menjadi lebih hidup dan nyaman.
+            </p>
+            <p>Anda dapat melihat berbagai pilihan tanaman outdoor yang kami sediakan</p>
+            <a href="katalog.html#outdoor">
+                <button>Lihat Katalog</button>
+            </a>
+        </article>
     </section>
-</main>
-<hr>
 
 <aside>
-    <h3>Informasi Tambahan</h3>
-    <p><b>Keunggulan Mitra Flora:</b></p>
+    <h3>Keunggulan Mitra Flora:</h3>
     <ul>
         <li>Tanaman berkualitas</li>
         <li>Mudah dirawat</li>
@@ -81,14 +81,35 @@
     </ul>
 </aside>
 
-<hr>
+</main>
 
 
 <footer>
-    <p align="center">© 2026 Mitra Flora</p>
-    <p align="center">Alamat: Jl. Kalimantan 10, Jember, Indonesia</p>
-    <p align="center">Email: mitraflora@email.com</p>
-    <p align="center">Telepon: 08123456789</p>
+    <div class="footer-konten">
+        <div class="footer-logo">
+            <img src="logo mitra flora.webp" alt="Mitra Flora Logo">
+        </div>
+
+        <div class="footer-info">
+            <div class="footer-item">
+                <h3>Mitra Flora</h3>
+                <p>Menyediakan berbagai kebutuhan tanaman hias berkualitas untuk rumah, kantor, dan taman.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Lokasi</h3>
+                <p>Jl. Kalimantan 10, Jember, Indonesia</p>
+            </div>
+            <div class="footer-item">
+                <h3>Kontak</h3>
+                <p>Email: mitraflora@email.com</p>
+                <p>WA: 08123456789</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Mitra Flora. Hak cipta dilindungi.
+    </div>
 </footer>
 
 </body>
