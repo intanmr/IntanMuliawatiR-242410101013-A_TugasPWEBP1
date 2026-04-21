@@ -3,112 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mitra Flora</title>
-<link rel="stylesheet" href="style.css">
+<title>Mitra Flora - Landing Page</title>
+<link rel="stylesheet" href="adminstyle.css">
 </head>
+
 <body>
 
 <header>
-    <img src="logo mitra flora.webp" alt="Logo Mitra Flora" width="80">
-    <h1>Mitra Flora</h1>
+        <div class="logo">
+            <img src="logo mitra flora.webp" alt="Logo Mitra Flora">
+            <span class="text">
+                Mitra<span class="highlight">Flora</span>
+            </span>
+        </div>
 
-    <nav>
-        <a href="index.html">Beranda</a> 
-        <a href="produk.html">Produk Kami</a> 
-        <a href="riwayat.html">Riwayat Pemesanan</a> 
-        <a href="akun.html">Akun</a>
-    </nav>
+        <div class="nav-right">
+            <button class="btn-customer" onclick="location.href='customer.html'">
+                <strong>Customer</strong>
+            </button>
+            <button class="btn-admin" onclick="location.href='inputproduk.html'">
+                <strong>Admin</strong>
+            </button>
+        </div>
 </header>
 
-<main>
+<section class="hero">
+    <div class="container">
+        <div class="hero-left">
+            <p class="tag">
+                <span class="dot"></span>
+                <strong>Solusi Tanaman Hias Terbaik</strong>
+            </p>
 
-    <section class="hero">
-        <h2>Selamat Datang di Mitra Flora</h2>
-        <p>
-            Mitra Flora menyediakan berbagai tanaman hias indah dan berkualitas.
-            Melalui website ini, Anda dapat dengan mudah melihat koleksi tanaman,
-            mengetahui informasi produk, dan melakukan pemesanan dengan praktis.
-        </p>
-        <a href="produk.html">
-            <button>Lihat Produk</button>
-        </a>
-    </section>
+            <h1>
+                Hadirkan Nuansa <br>
+                <span>Asri Alami</span> Dalam <br>
+                Setiap Ruangan Indah.
+            </h1>
 
-    <section>
-        <h2>Produk Kami</h2>
-        <p>Temukan berbagai pilihan tanaman hias yang cantik dan mudah dirawat.</p>
+            <p class="desc">
+                Sistem pengelolaan tanaman hias yang praktis, membantu 
+                Anda mengatur stok, penjualan, dan data produk dengan mudah.
+            </p>
 
-        <div>
-            <article>
-                <img src="Tanaman Indoor.jpg" alt="Tanaman Indoor" width="300">
-                <h3>Tanaman Indoor</h3>
-                <a href="produk.html">Jelajahi produk kami</a>
-            </article>
-
-            <article>
-                <img src="Tanaman Outdoor.jpg" alt="Tanaman Outdoor" width="300">
-                <h3>Tanaman Outdoor</h3>
-                <a href="produk.html">Jelajahi produk kami</a>
-            </article>
+            <div class="hero-btn">
+                <div class="icon-dashboard"></div>
+                <button class="btn-dashboard" onclick="location.href='inputproduk.html'">
+                    <strong>Lihat Dashboard</strong>
+                </button>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <aside>
-        <h3>Statistik Produk Terlaris</h3>
 
-        <p>Monstera (120 terjual)</p>
-        <progress value="120" max="150"></progress>
+<section class="statistik">
+    <div class="container">
+        <div class="statistik-grid">
 
-        <p>Anggrek Bulan (95 terjual)</p>
-        <progress value="95" max="150"></progress>
+            <div class="statistik-card">
+                <div class="icon">😊</div>
+                <h2>95%</h2>
+                <p>Kepuasan Pelanggan</p>
+            </div>
 
-        <p>Philodendron (80 terjual)</p>
-        <progress value="80" max="150"></progress>
+            <div class="statistik-card">
+                <div class="icon">🌿</div>
+                <h2>500+</h2>
+                <p>Produk Terjual</p>
+            </div>
 
-        <p>Calathea (60 terjual)</p>
-        <progress value="60" max="150"></progress>
-    </aside>
+            <div class="statistik-card">
+                <div class="icon">⭐</div>
+                <h2>4.8/5</h2>
+                <p>Rating Pelanggan</p>
+            </div>
 
-    <section>
-        <h2>Kami menghadirkan tanaman untuk berbagai jenis ruangan</h2>
-
-        <div>
-            <article>
-                <img src="gedung.jpg" alt="Gedung" width="300">
-                <h3>Gedung</h3>
-            </article>
-
-            <article>
-                <img src="kantor.jpg" alt="Kantor" width="300">
-                <h3>Kantor</h3>
-            </article>
-
-            <article>
-                <img src="sekolah.jpg" alt="Sekolah" width="300">
-                <h3>Sekolah</h3>
-            </article>
         </div>
-    </section>
+    </div>
+</section>
 
-</main>
+<!-- Layanan -->
+<section class="layanan">
+    <div class="container">
+        <div class="layanan-box">
+            <h2 class="layanan-title">Pilihan Tanaman Hias Terbaik untuk Anda</h2>
+            <p class="layanan-desc">
+                Kami menghadirkan tanaman berkualitas dengan tampilan menarik dan perawatan yang mudah.
+            </p>
+
+            <div class="fitur-grid">
+                <div class="fitur-card">
+                    <div class="icon">🌱</div>
+                    <h4>Manajemen Produk</h4>
+                    <p>Kelola data tanaman hias dengan mudah, mulai dari tambah, edit, hingga pengaturan stok dan harga produk.</p>
+                </div>
+
+                <div class="fitur-card">
+                    <div class="icon">📝</div>
+                    <h4>Laporan Penjualan</h4>
+                    <p>Pantau seluruh transaksi penjualan secara terstruktur dengan laporan yang membantu analisis bisnis Anda.</p>
+                </div>
+
+                <div class="fitur-card">
+                    <div class="icon">💳</div>
+                    <h4>Verifikasi Pembayaran</h4>
+                    <p>Proses dan validasi pembayaran pelanggan dengan cepat untuk memastikan transaksi berjalan aman dan akurat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer>
     <div class="footer-konten">
-        <!-- Logo -->
         <div class="footer-logo">
             <img src="logo mitra flora.webp" alt="Mitra Flora Logo">
         </div>
 
-        <!-- Info 3 kolom -->
         <div class="footer-info">
             <div class="footer-item">
                 <h3>Mitra Flora</h3>
                 <p>Menyediakan berbagai kebutuhan tanaman hias berkualitas untuk rumah, kantor, dan taman.</p>
             </div>
+
             <div class="footer-item">
                 <h3>Lokasi</h3>
                 <p>Jl. Kalimantan 10, Jember, Indonesia</p>
             </div>
+
             <div class="footer-item">
                 <h3>Kontak</h3>
                 <p>Email: mitraflora@email.com</p>

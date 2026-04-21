@@ -10,80 +10,87 @@
 
 <header>
     <img src="logo mitra flora.webp" alt="Logo Mitra Flora">
-    <h1>Mitra Flora</h1>
-
+    <h1>Mitra<span class="highlight">Flora</span></h1>
     <nav>
-        <a href="index.html">Beranda</a> 
-        <a href="produk.html">Produk Kami</a> 
-        <a href="riwayat.html">Riwayat Pemesanan</a> 
+        <a href="customer.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="riwayat.html" class="active">Riwayat</a>
         <a href="akun.html">Akun</a>
     </nav>
 </header>
 
 <main>
-    <section>
-        <h2>Riwayat Pemesanan</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Tanggal Pesan</th>
-                    <th>Nama Produk</th>
-                    <th>Jumlah</th>
-                    <th>Total Harga</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>2026-03-20</td>
-                    <td>Bromelia</td>
-                    <td>2</td>
-                    <td>Rp 60.000</td>
-                    <td>Selesai</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>2026-03-24</td>
-                    <td>Kaktus</td>
-                    <td>3</td>
-                    <td>Rp 90.000</td>
-                    <td>Dikirim</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>2026-03-27</td>
-                    <td>Marigold</td>
-                    <td>1</td>
-                    <td>Rp 25.000</td>
-                    <td>Dalam Proses</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>2026-03-27</td>
-                    <td>Lidah mertua</td>
-                    <td>1</td>
-                    <td>Rp 45.000</td>
-                    <td>Dalam Proses</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>2026-03-28</td>
-                    <td>Anggrek bulan</td>
-                    <td>2</td>
-                    <td>Rp 100.000</td>
-                    <td>Menunggu Konfirmasi</td>
-                </tr>
-            </tbody>
-        </table>
+    <section class="page-section">
 
-        <!-- Tombol Kembali -->
-        <div class="tombol-kembali">
-            <a href="katalog.html">
-                <button>Kembali</button>
-            </a>
+        <div class="content-box">
+            <h2>📋 Riwayat Pemesanan</h2>
+            <p>Pantau status pemesanan tanaman hias Anda.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal Pesan</th>
+                            <th>Nama Produk</th>
+                            <th>Jumlah</th>
+                            <th>Total Harga</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2026-03-20</td>
+                            <td>Bromelia</td>
+                            <td>2</td>
+                            <td>Rp 60.000</td>
+                            <td><span class="status-badge selesai">Selesai</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2026-03-24</td>
+                            <td>Kaktus</td>
+                            <td>3</td>
+                            <td>Rp 90.000</td>
+                            <td><span class="status-badge dikirim">Dikirim</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2026-03-27</td>
+                            <td>Marigold</td>
+                            <td>1</td>
+                            <td>Rp 25.000</td>
+                            <td><span class="status-badge diproses">Dalam Proses</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2026-03-27</td>
+                            <td>Lidah Mertua</td>
+                            <td>1</td>
+                            <td>Rp 45.000</td>
+                            <td><span class="status-badge diproses">Dalam Proses</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2026-03-28</td>
+                            <td>Anggrek Bulan</td>
+                            <td>2</td>
+                            <td>Rp 100.000</td>
+                            <td><span class="status-badge menunggu">Menunggu Konfirmasi</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tombol-kembali">
+                <a href="katalog.html">
+                    <button class="btn-back">← Kembali ke Katalog</button>
+                </a>
+            </div>
         </div>
+
     </section>
 </main>
 
@@ -92,7 +99,6 @@
         <div class="footer-logo">
             <img src="logo mitra flora.webp" alt="Mitra Flora Logo">
         </div>
-
         <div class="footer-info">
             <div class="footer-item">
                 <h3>Mitra Flora</h3>
@@ -109,10 +115,7 @@
             </div>
         </div>
     </div>
-
-    <div class="footer-copy">
-        © 2026 Mitra Flora. Hak cipta dilindungi.
-    </div>
+    <div class="footer-copy">© 2026 Mitra Flora. Hak cipta dilindungi.</div>
 </footer>
 
 </body>
